@@ -1,4 +1,4 @@
-- tasks:
-   - name: run show version
-     iosxr_command:
-       commands:show version
+tasks:
+  - name: run show version
+    iosxr_command:
+      commands: show version
