@@ -1,4 +1,7 @@
-tasks:
-  - name: run show version
-    ios_command:
-      commands: show version
+- name: run show version
+  hosts: all
+  tasks:
+    - name: run show version
+      ios_command:
+        commands: show version
+
