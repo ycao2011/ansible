@@ -1,5 +1,4 @@
-- name: run show version
-  connection: local
+- connection: local
   hosts: all
   tasks:
     - name: run show version
