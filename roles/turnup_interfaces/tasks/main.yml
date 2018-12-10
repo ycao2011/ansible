@@ -1,0 +1,9 @@
+- name: turn up interface
+  ios_command:
+      commands: 
+          - conf t
+          - interface {{interface_id}}
+          - no shut
+          - exit
+  register: result
+- debug: var=result
