@@ -2,4 +2,4 @@
   iosxr_config:
       lines: 
          - no shut
-      parents: interface Te0/3/0/0/6
+      parents: interface {{item}}
