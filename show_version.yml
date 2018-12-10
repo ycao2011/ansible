@@ -1,5 +1,7 @@
 - name: run show version
   hosts: all
+  vars:
+     ANSIBLE_ROLES_PATH: ~/roles/
   roles:
      - role: show_version
   
