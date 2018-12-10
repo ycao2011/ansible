@@ -6,4 +6,5 @@
       ios_command:
         commands: 
           - show version
-        
+      register: result
+    - debug: var=result
