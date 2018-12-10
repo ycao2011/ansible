@@ -3,6 +3,7 @@
       lines: 
          - no shut
       parents: interface Te0/3/0/0/6
-  - name: commit config after change
+- name: commit config after change
     ios_config:
-      save_when: modified
+      lines:
+         - commit
