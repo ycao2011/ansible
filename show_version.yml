@@ -1,4 +1,5 @@
 - name: run show version
+  connection: local
   hosts: all
   vars:
      ANSIBLE_ROLES_PATH: ~/roles/
