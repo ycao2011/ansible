@@ -1,5 +1,6 @@
 - name: run show version
   connection: local
+  hosts: all
   tasks:
     - name: run show version
       ios_command:
