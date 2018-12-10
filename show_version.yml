@@ -1,4 +1,5 @@
 - name: run show version
+  hosts: all
   roles:
      - role: show_version
   
