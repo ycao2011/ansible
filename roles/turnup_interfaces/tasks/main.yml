@@ -2,7 +2,7 @@
   ios_command:
       commands: 
           - conf t
-          - interface {{interface_id}}
+          - interface {{item}}
           - no shut
           - exit
   register: result
