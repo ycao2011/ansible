@@ -1,0 +1,9 @@
+- name: turn up interfaces
+  connection: local
+  hosts: all
+  vars:
+     ANSIBLE_ROLES_PATH: ~/roles/
+  roles:
+     - role: turnup_interface
+  with_items:
+     - Te0/3/0/0/6
