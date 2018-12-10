@@ -1,3 +1,4 @@
-- roles:
-  - role: show_version
+- name: run show version
+  roles:
+     - role: show_version
   
