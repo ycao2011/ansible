@@ -3,7 +3,8 @@
   hosts: all
   vars:
      ANSIBLE_ROLES_PATH: ~/roles/
+     interface:
+        - "Te0/3/0/0/6"
   roles:
      - role: turnup_interfaces
-  with_items:
-     - "Te0/3/0/0/6"
+  
