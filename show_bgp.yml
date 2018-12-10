@@ -1,0 +1,7 @@
+- name: run show bgp summary
+  connection: local
+  hosts: all
+  vars:
+     ANSIBLE_ROLES_PATH: ~/roles/
+  roles:
+     - role: show_bgp
