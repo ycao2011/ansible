@@ -6,4 +6,4 @@
   roles:
      - role: turnup_interfaces
   with_items:
-     - Te0/3/0/0/6
+     - "Te0/3/0/0/6"
