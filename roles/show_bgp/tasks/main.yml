@@ -1,6 +1,6 @@
 - name: run show bgp summary
-      ios_command:
+  ios_command:
         commands: 
           - show bgp summary
-      register: result
+  register: result
 - debug: var=result
