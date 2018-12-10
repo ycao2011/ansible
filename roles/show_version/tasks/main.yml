@@ -1,6 +1,4 @@
-- connection: local
-  hosts: all
-  tasks:
+- tasks:
     - name: run show version
       ios_command:
         commands: 
