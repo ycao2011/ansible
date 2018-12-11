@@ -1,10 +1,8 @@
 - name: turn up interfaces
   connection: local
   hosts: all
-  vars:
-     ANSIBLE_ROLES_PATH: " ~/projects/_6__ycao2011/roles/turnup_interfaces/tasks/main.yml"
   tasks:
-    - include: {{ ANSIBLE_ROLES_PATH }}
+    - include: ~/projects/_6__ycao2011/roles/turnup_interfaces/tasks/main.yml
       with_items: 
         - "Te0/3/0/0/0"
         - "Te0/3/0/0/1"
