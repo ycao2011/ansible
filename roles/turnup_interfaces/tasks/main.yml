@@ -2,4 +2,4 @@
   iosxr_config:
       lines: 
          - no shut
-      parents: interface {{ interfaceid }}
+      parents: interface {{ item }}
