@@ -4,8 +4,6 @@
   vars:
      ANSIBLE_ROLES_PATH: ~/roles/
   roles:
-    - turnup_interfaces
-      with_items:
-         - "Te0/3/0/0/0"
-         - "Te0/3/0/0/1"
+    - { role: turnup_interfaces,  
+        with_items: ["Te0/3/0/0/0", "Te0/3/0/0/1"] }
 
