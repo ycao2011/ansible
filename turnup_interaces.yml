@@ -2,8 +2,10 @@
   connection: local
   hosts: all
   tasks:
-    - include: ~/projects/_6__ycao2011/roles/turnup_interfaces/tasks/main.yml
-      with_items:
+   # - include: ~/projects/_6__ycao2011/roles/turnup_interfaces/tasks/main.yml
+     - import_role:
+         name: turnup_interfaces
+       with_items:
          - "Te0/3/0/0/0"
          - "Te0/3/0/0/1"
 
