@@ -1,0 +1,7 @@
+- name: add several users
+  vars:
+    name: "{{ item }}"
+  debug: var=name  
+  with_items:
+     - testuser1
+     - testuser2
