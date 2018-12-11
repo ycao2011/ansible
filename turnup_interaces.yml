@@ -1,6 +1,8 @@
 - name: turn up interfaces
   connection: local
   hosts: all
+  vars:
+     ANSIBLE_ROLES_PATH: ~/roles/
   tasks:
    # - include: ~/projects/_6__ycao2011/roles/turnup_interfaces/tasks/main.yml
      - import_role:
