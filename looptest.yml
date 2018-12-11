@@ -1,7 +1,7 @@
 - name: add several users
   hosts: all
   vars:
-    name: "{{ item }}"
+    username: "{{ item }}"
   with_items:
      - testuser1
      - testuser2
