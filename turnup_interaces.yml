@@ -4,10 +4,9 @@
   vars:
      ANSIBLE_ROLES_PATH: ~/roles/
   tasks:
-   # - include: ~/projects/_6__ycao2011/roles/turnup_interfaces/tasks/main.yml
-     - import_role:
+    - import_role:
          name: turnup_interfaces
-       with_items:
+      with_items:
          - "Te0/3/0/0/0"
          - "Te0/3/0/0/1"
 
