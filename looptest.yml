@@ -1,8 +1,9 @@
-- name: add several users
-  user:
-    name: "{{ item }}"
-    state: present
-    groups: "wheel"
-  with_items:
-     - testuser1
-     - testuser2
+- name: looptest
+  hosts: all
+  tasks:
+    # emit a debug message containing the content of each file.
+    - debug:
+        msg: "{{ item }}"
+      with_items:
+        - first_example_file
+        - second_example_file
