@@ -1,7 +1,8 @@
 - name: add several users
-  hosts: all
-  vars:
-    username: "{{ item }}"
+  user:
+    name: "{{ item }}"
+    state: present
+    groups: "wheel"
   with_items:
      - testuser1
      - testuser2
