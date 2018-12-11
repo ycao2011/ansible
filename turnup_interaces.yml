@@ -5,7 +5,7 @@
      ANSIBLE_ROLES_PATH: ~/roles/
   roles:
      - { role: turnup_interfaces, interfaceid: "{{ item }}" }
-  with_items:
+  loop:
      - "Te0/3/0/0/0"
      - "Te0/3/0/0/1"
 
