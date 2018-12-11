@@ -6,5 +6,5 @@
     - debug:
         msg: "{{ item }}"
       with_items:
-        - first_example_file
-        - second_example_file
+        - first
+        - second
