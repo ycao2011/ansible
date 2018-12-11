@@ -3,11 +3,8 @@
   hosts: all
   vars:
      ANSIBLE_ROLES_PATH: ~/roles/
-  tasks:
-     - vars:
-         interfaceid: "{{item}}"
-     - include_role:
-         name: turnup_interfaces
+  roles:
+     - { role: turnup_interfaces, interfaceid: "{{item}}" }
      - with_items:
              - "Te0/3/0/0/0"
              - "Te0/3/0/0/1"
