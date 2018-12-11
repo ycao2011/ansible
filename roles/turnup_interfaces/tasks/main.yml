@@ -1,7 +1,5 @@
 - name: turn up interface
-  vars:
-    interface_id={{item}}
   iosxr_config:
       lines: 
          - no shut
-      parents: interface {{interface_id}}
+      parents: interface {{interfaceid}}
